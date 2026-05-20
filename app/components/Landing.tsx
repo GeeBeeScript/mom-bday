@@ -75,7 +75,8 @@ export default function Landing() {
       {/* Section 1: Happy Birthday Greeting */}
       <section className="w-full max-w-2xl py-16 text-center">
         <h1 className="text-5xl md:text-6xl font-bold tracking-tight">
-          Happy Birthday, Ma <span className="text-4xl md:text-5xl">🎉🎂✨</span>
+          Happy Birthday, Ma{" "}
+          <span className="text-4xl md:text-5xl">🎉🎂✨</span>
         </h1>
         <p className="mt-6 text-xl text-zinc-300">
           Celebrating you today and always! 🎈💝🌟
@@ -93,7 +94,6 @@ export default function Landing() {
         </div>
         <p className="text-center text-zinc-400 mt-4 text-sm">
           This was enhanced, because the main image is heavily damaged 😭
-
         </p>
       </section>
 
@@ -101,12 +101,12 @@ export default function Landing() {
       <section className="w-full py-16 overflow-hidden">
         <h2 className="text-2xl font-bold text-center mb-8"></h2>
         <div className="relative w-full">
-          <div className="marquee-container flex gap-6 animate-marquee">
+          <div className="marquee-container flex gap-3 sm:gap-4 md:gap-6 animate-marquee">
             {/* Original set */}
             {IMAGES.map((idx) => (
               <div
                 key={`original-${idx}`}
-                className="flex-shrink-0 w-64 h-48 rounded-xl overflow-hidden border-2 border-zinc-700 bg-zinc-900 shadow-lg"
+                className="flex-shrink-0 w-40 h-32 sm:w-48 sm:h-40 md:w-64 md:h-48 rounded-xl overflow-hidden border-2 border-zinc-700 bg-zinc-900 shadow-lg"
               >
                 <img
                   src={`${idx}`}
@@ -120,10 +120,10 @@ export default function Landing() {
               </div>
             ))}
             {/* Duplicate set for seamless loop */}
-            {/* {IMAGES.map((idx) => (
+            {IMAGES.map((idx) => (
               <div
                 key={`duplicate-${idx}`}
-                className="flex-shrink-0 w-64 h-48 rounded-xl overflow-hidden border-2 border-zinc-700 bg-zinc-900 shadow-lg"
+                className="flex-shrink-0 w-40 h-32 sm:w-48 sm:h-40 md:w-64 md:h-48 rounded-xl overflow-hidden border-2 border-zinc-700 bg-zinc-900 shadow-lg"
               >
                 <img
                   src={`${idx}`}
@@ -135,7 +135,7 @@ export default function Landing() {
                   }}
                 />
               </div>
-            ))} */}
+            ))}
           </div>
         </div>
         {/* <p className="text-center text-zinc-400 mt-6 text-sm">
