@@ -101,12 +101,12 @@ export default function Landing() {
       <section className="w-full py-16 overflow-hidden">
         <h2 className="text-2xl font-bold text-center mb-8"></h2>
         <div className="relative w-full">
-          <div className="marquee-container flex gap-3 sm:gap-4 md:gap-6 animate-marquee">
+          <div className="marquee-container flex gap-2 sm:gap-3 md:gap-6 animate-marquee">
             {/* Original set */}
             {IMAGES.map((idx) => (
               <div
                 key={`original-${idx}`}
-                className="flex-shrink-0 w-40 h-32 sm:w-48 sm:h-40 md:w-64 md:h-48 rounded-xl overflow-hidden border-2 border-zinc-700 bg-zinc-900 shadow-lg"
+                className="flex-shrink-0 w-32 h-24 sm:w-40 sm:h-32 md:w-64 md:h-48 rounded-xl overflow-hidden border-2 border-zinc-700 bg-zinc-900 shadow-lg"
               >
                 <img
                   src={`${idx}`}
@@ -123,7 +123,7 @@ export default function Landing() {
             {IMAGES.map((idx) => (
               <div
                 key={`duplicate-${idx}`}
-                className="flex-shrink-0 w-40 h-32 sm:w-48 sm:h-40 md:w-64 md:h-48 rounded-xl overflow-hidden border-2 border-zinc-700 bg-zinc-900 shadow-lg"
+                className="flex-shrink-0 w-32 h-24 sm:w-40 sm:h-32 md:w-64 md:h-48 rounded-xl overflow-hidden border-2 border-zinc-700 bg-zinc-900 shadow-lg"
               >
                 <img
                   src={`${idx}`}
