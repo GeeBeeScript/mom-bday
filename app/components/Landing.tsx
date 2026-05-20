@@ -120,7 +120,7 @@ export default function Landing() {
               </div>
             ))}
             {/* Duplicate set for seamless loop */}
-            {IMAGES.map((idx) => (
+            {/* {IMAGES.map((idx) => (
               <div
                 key={`duplicate-${idx}`}
                 className="flex-shrink-0 w-64 h-48 rounded-xl overflow-hidden border-2 border-zinc-700 bg-zinc-900 shadow-lg"
@@ -135,7 +135,7 @@ export default function Landing() {
                   }}
                 />
               </div>
-            ))}
+            ))} */}
           </div>
         </div>
         {/* <p className="text-center text-zinc-400 mt-6 text-sm">
